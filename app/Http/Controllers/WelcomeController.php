@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\DB;
 class WelcomeController extends Controller
 {
     public function index(){
+        echo view("welcome");
         // 1. Using raw SQL queiries
         // $users = DB::select('select * from users ');
         // dd($users);
@@ -25,9 +26,9 @@ class WelcomeController extends Controller
         //     echo $student->name. "<br>";
         // }
 
-        $student = new Student();
-        $student->name = "Hannahh";
-        $student->email = "Hannagh@email.com";
-        $student->save();
+        // $student = new Student();
+        // $student->name = "Hannahh";
+        // $student->email = "Hannagh@email.com";
+        // $student->save();
     }
 }
